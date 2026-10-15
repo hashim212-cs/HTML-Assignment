@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+  </head>
+  <body>
+    <header>
+      <table border="1" align="center" cellpadding="5">
+        <tr>
+          <td>
+            <img
+              src="./assets/fonts/logo.png"
+              alt="Saylani Logo"
+              height="30"
+            />
+          </td>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="about.html">About</a></td>
+          <td><a href="gallery.html">Gallery</a></td>
+          <td><a href="media.html">Media</a></td>
+          <td><a href="contact.html">Contact</a></td>
+          <td><a href="login.html">Login</a></td>
+          <td><a href="register.html">Register</a></td>
+        </tr>
+      </table>
+    </header>
+    <main>
+      <hr />
+      <h1 align="center">Register page</h1>
+      <hr />
+      <div align="center">
+        <h3>Please register to continue</h3>
+        <p>All the fields are required.</p>
+      </div>
+      <hr />
+      <div align="center">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset style="width: 280px; text-align: left">
+            <legend>Regsiter</legend>
+
+            <p>
+              <label for="fullname">Full Name:</label><br />
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Full Name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </p>
+            <p>
+              <label>Gender:</label><br />
+              Male:
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              Female:
+              <input type="radio" id="female" name="gender" value="female" />
+            </p>
+            <p>
+              <label>Hobbies:</label><br />
+              Music:
+              <input type="checkbox" name="hobbies" value="music" checked /> Art
+              <input type="checkbox" name="hobbies" value="art" /> Painting
+              <input type="checkbox" name="hobbies" value="painting" />
+            </p>
+            <p>
+              <label for="country">Country:</label><br />
+              <select id="country" name="country" required>
+                <option value="Pakistan" selected>Pakistan</option>
+                <option value="USA" selected>USA</option>
+                <option value="UAE" selected>UAE</option>
+                <option value="UK" selected>UK</option>
+                </option>
+              </select>
+            </p>
+            <p>
+              <label for="dob">DOB:</label><br />
+              <input type="date" id="dob" name="dob" required />
+            </p>
+            <p>
+              <label for="photo">Upload your photo:</label><br />
+              <input type="file" id="photo" name="photo" required />
+            </p>
+            <p>
+              <input type="submit" value="Register" />
+            </p>
+            <p>
+              <a href="login.html">Already a user?</a>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <p align="center">Copyright &copy; 2026. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
